@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Form Validator</title>
-  </head>
-  <body>
-    <div class="container">
-      <form id="form" class="form">
-        <h2>Register With Us</h2>
-        <div class="form-control">
-          <label for="username">Username</label>
-          <input type="text" id="username" placeholder="Enter username" />
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Enter email" />
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter password" />
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="password2">Confirm Password</label>
-          <input
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="style.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>Form Validator</title>
+</head>
+
+<body>
+	<div class="container">
+		<form id="form" class="form">
+			<h2>New Member</h2>
+			<div class="form-control">
+				<label for="username"></label>
+				<input type="text" id="username" placeholder="first and last name" />
+				<small>Error message</small>
+			</div>
+			<div class="form-control">
+				<label for="email"></label>
+				<input type="text" id="email" placeholder="email address" />
+				<small>Error message</small>
+			</div>
+			<div class="form-control">
+				<label for="password"></label>
+				<input type="password" id="password" placeholder="password" />
+				<span class="material-icons">visibility</span>
+				<small>Error message</small>
+			</div>
+			<div class="form-control">
+				<label for="password2"></label>
+				<input
             type="password"
             id="password2"
-            placeholder="Enter password again"
-          />
-          <small>Error message</small>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+            placeholder="password again">
+				<span class="material-icons">visibility</span>
+				<small>Error message</small>
+			</div>
+			<div class="customer-agreement">
+				<fieldset>
+					<input type="checkbox" id="chekbox-user-agree-to-terms"/>
+					<label for="checkbox-user-agree-to-terms">Creating an account means you’re okay with our Terms of Service, Privacy Policy, and our default Notification Settings.</label>
+				</fieldset>
+			</div>
+			<button type="submit">Create account</button>
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>
