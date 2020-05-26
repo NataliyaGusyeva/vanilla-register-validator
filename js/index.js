@@ -83,12 +83,4 @@ document.querySelector('.form-control success').type =
 
 document.querySelector('.show').addEventListener('click', togglePasswordShow);
 
-togglePasswordShow() {
-
-}
-
 document.getElementById('close-icon').addEventListener('click', closedRegisterButton);
-
-closedRegisterButton() {
-
-}
